@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Display | Kasi Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mobile-wrap">
+        <div id="cfd-app">
+            
+            <header class="cfd-header">
+                <h1>Kasi Cafe <i class="ph ph-lightning"></i></h1>
+                <p>Pay with Bitcoin Lightning</p>
+            </header>
+
+            <main class="payment-details">
+                <h2 id="zar-amount">R 0.00</h2>
+                <p id="sats-amount">0 Sats</p>
+
+                <div class="qr-container">
+                    <img id="qr-code" src="https://via.placeholder.com/250?text=Waiting+for+Invoice" alt="Lightning Invoice QR">
+                </div>
+
+                <div class="status-box">
+                    <p id="payment-status">Waiting for cashier to initiate transaction...</p>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script src="cfd.js"></script>
+</body>
+</html>
